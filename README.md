@@ -36,5 +36,3 @@ Run locally:
 pip install -r requirements.txt
 streamlit run streamlit_app.py
 ```
-
-A `Dockerfile` is included for quick containerization.
