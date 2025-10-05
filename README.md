@@ -16,12 +16,6 @@ source venv/bin/activate   # or `venv\Scripts\activate` on Windows
 pip install -r requirements.txt
 ```
 
-2. Run the demo script to get a forecast, schedule an EV, and run an A/B test simulation:
-```bash
-python scripts/run_demo.py --forecast --optimize --abtest
-```
-
-Outputs will be saved in `output/`.
 
 
 ## Streamlit App
