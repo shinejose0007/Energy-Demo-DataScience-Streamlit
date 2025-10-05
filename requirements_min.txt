@@ -1,0 +1,8 @@
+streamlit>=1.20
+plotly
+pandas
+numpy
+scikit-learn
+pulp
+scipy
+joblib
