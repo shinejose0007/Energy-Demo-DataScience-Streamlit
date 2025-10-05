@@ -1,4 +1,40 @@
-#  Energy Demo Data Science
-See requirements_min.txt to install dependencies.
- pip install -r requirements.txt
- streamlit run streamlit_app.py
+#  Energy — Data Scientist Demo Project
+
+This demo project showcases a compact, interview-friendly Python project tailored to the RABOT Energy Data Scientist role.
+It includes:
+- data ingestion & preprocessing (sample CSVs)
+- a simple forecasting pipeline (scikit-learn RandomForest)
+- a charging optimization example (pulp linear program) that schedules EV charging to minimize cost
+- a small A/B test simulation with statistical test (scipy)
+- plotting utilities and a single `run_demo.py` CLI for quick runs
+
+## Quick start (local)
+1. Create a virtualenv and install requirements:
+```bash
+python -m venv venv
+source venv/bin/activate   # or `venv\Scripts\activate` on Windows
+pip install -r requirements.txt
+```
+
+2. Run the demo script to get a forecast, schedule an EV, and run an A/B test simulation:
+```bash
+python scripts/run_demo.py --forecast --optimize --abtest
+```
+
+Outputs will be saved in `output/`.
+
+
+## Streamlit App
+
+A Streamlit app is included (`streamlit_app.py`) that provides an interactive interface to:
+- Run the forecasting pipeline
+- Run the EV charging optimization and download schedules
+- Simulate an A/B test and download results
+
+Run locally:
+```bash
+pip install -r requirements.txt
+streamlit run streamlit_app.py
+```
+
+A `Dockerfile` is included for quick containerization.
